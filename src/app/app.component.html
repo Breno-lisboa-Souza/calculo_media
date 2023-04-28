@@ -1,0 +1,125 @@
+
+<h1 class="h1">Notas da primeira turma de alunos da escola de magia Blizzard</h1>
+
+<h4 class="h4">Ultima prova aplicada no dia: {{dataFicticia}}</h4>
+
+
+              <div class="row">
+
+
+
+                <div class="col-md-2">
+                  <div class="card w-1 p-2 " style="width: 12rem; height: 21rem; background-color: #7A2EE6; ">
+                    <img [src]="imagem" class="card-img-top" alt="..."/>
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        {{ Nome }}
+                      </h5>
+                      <p>A média do aluno foi <b>{{media}}</b></p>
+                      <span *ngIf="media >= 7; else elseBlock" class="badge badge-success float-right">Aprovado</span>
+                        <ng-template #elseBlock >
+                        <span class="badge btn-danger float-right">Reprovado</span>
+                        </ng-template>
+                    </div>
+                  </div>
+                </div>
+
+
+
+                  <div class="col-md-2">
+                    <div class="card w-1 p-2" style="width: 12rem; height: 21rem; background-color: #7A2EE6;">
+                      <img [src]="imagem2" class="card-img-top" alt="..."/>
+                      <div class="card-body">
+                        <h5 class="card-title">
+                          {{ Nome2 }}
+                        </h5>
+                        <p>A média do aluno foi <b>{{mediaa}}</b></p>
+                          <span *ngIf="mediaa >= 7; else elseBlock" class="badge badge-success float-right">Aprovado</span>
+                          <ng-template #elseBlock >
+                          <span class="badge btn-danger float-right">Reprovado</span>
+                          </ng-template>
+                      </div>
+                    </div>
+                  </div>
+
+
+
+                  <div class="col-md-2">
+                    <div class="card w-1 p-2" style="width: 12rem; height: 21rem; background-color: #7A2EE6;">
+                      <img [src]="imagem3" class="card-img-top" alt="..."/>
+                      <div class="card-body">
+                        <h5 class="card-title">
+                          {{ Nome3 }}
+                        </h5>
+                        <p>A média do aluno foi <b>{{media3}}</b></p>
+                          <span *ngIf="media3 >= 7; else elseBlock" class="badge badge-success float-right">Aprovado</span>
+                          <ng-template #elseBlock >
+                          <span class="badge btn-danger float-right">Reprovado</span>
+                          </ng-template>
+                      </div>
+                    </div>
+                  </div>
+
+
+
+
+
+
+                  <div class="col-md-2">
+                    <div class="card w-1 p-2" style="width: 12rem; height: 21rem; background-color: #7A2EE6;">
+                      <img [src]="imagem4" class="card-img-top" alt="..."/>
+                      <div class="card-body">
+                        <h5 class="card-title">
+                          {{ Nome4 }}
+                        </h5>
+                        <p>A média do aluno foi <b>{{media4}}</b></p>
+                          <span *ngIf="media4 >= 7; else elseBlock" class="badge badge-success float-right">Aprovado</span>
+                          <ng-template #elseBlock >
+                            <span class="badge btn-danger float-right">Danger</span>
+                          </ng-template>
+                      </div>
+                    </div>
+                  </div>
+
+
+
+                  <div class="col-md-2">
+                    <div class="card w-1 p-2" style="width: 12rem; height: 21rem; background-color: #7A2EE6;">
+                      <img [src]="imagem5" class="card-img-top" alt="..."/>
+                      <div class="card-body">
+                        <h5 class="card-title">
+                          {{ Nome5 }}
+                        </h5>
+                        <p>A média do aluno foi <b>{{media5}}</b></p>
+                          <span *ngIf="media5 >= 7; else elseBlock" class="badge badge-success float-right">Aprovado</span>
+                          <ng-template #elseBlock >
+                            <span class="badge btn-danger float-right">Danger</span>
+                          </ng-template>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-2">
+                    <div class="card w-1 p-2" style="width: 12rem; height: 21rem; background-color: #7A2EE6;">
+                      <img [src]="imagem6" class="card-img-top" alt="..."/>
+                      <div class="card-body">
+                        <h5 class="card-title">
+                          {{ Nome6 }}
+                        </h5>
+                        <p>A média do aluno foi <b>{{media6}}</b></p>
+                          <span *ngIf="media6 >= 7; else elseBlock" class="badge badge-success float-right">Aprovado</span>
+                          <ng-template #elseBlock >
+                            <span class="badge btn-danger float-right">Danger</span>
+                          </ng-template>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+
+              <div class="nav fixed-bottom navbar-light bg-light justify-content-center">
+                <span class="navbar-text">
+                  Breno Lisboa <b>#Projeto Angular Cards</b>
+                </span>
+              </div>
+
+<router-outlet></router-outlet>

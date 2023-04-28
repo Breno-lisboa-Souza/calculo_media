@@ -1,0 +1,37 @@
+body{
+  display: flex;
+  justify-content: center;
+}
+
+.row{
+  margin-top: 15%;
+}
+
+.h1{
+  margin-top: 2%;
+  color: aliceblue;
+}
+
+.h4{
+  margin-top: 2%;
+  color: aliceblue;
+}
+
+.card{
+  box-shadow: 5px 5px 5px 5px black;
+  border-color: white;
+  border-style:solid;
+}
+
+.card:hover {
+  transform: translateY(-70px);
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+  transition-duration: 1s;
+}
+
+.card:not(:hover){
+  transform: translateY(0px);
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, -0.3);
+  transition-duration: 1s;
+}
+
